@@ -1,0 +1,4 @@
+name: LootPile
+version: '${version}'
+main: xyz.gustycube.lootpile.LootPile
+api-version: '1.20'
