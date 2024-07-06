@@ -14,11 +14,6 @@ public class PlayerDeathListener implements Listener {
     public void onPlayerDeath(PlayerDeathEvent event) {
         Player player = event.getEntity();
         Location deathLocation = player.getLocation();
-        Entity killer = player.getKiller();
-
-        if (killer != null && killer.getType() == EntityType.PLAYER) {
-            deathLocation.getWorld().strikeLightning(deathLocation);
-        }
 
         event.getDrops().clear();
 
